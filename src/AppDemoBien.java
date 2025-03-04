@@ -30,6 +30,8 @@ public class AppDemoBien {
 		//bước 2
 		new Scanner(System.in);
 		//Bước 3
+		
+		Object obj;
 
 	}
 
