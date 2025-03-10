@@ -11,7 +11,7 @@ public class CXNgoaiThanh extends ChuyenXe{
 	}
 	
 	CXNgoaiThanh(int _maCX, String _hoTen, String _soXe,
-			double _donGia, float _soKm, 
+			double _donGia, 
 			int _soNgayDi, String _noiDen){
 		super(_maCX, _hoTen, _soXe, _donGia);
 		soNgayDi = _soNgayDi;
