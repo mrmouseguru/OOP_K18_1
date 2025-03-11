@@ -8,12 +8,14 @@ public class CXMenu {
 	Scanner in;
 	String prompt;
 	CXInput cxInput;
+	DSCXControl dscxControl;
 	// ô 3
 	CXMenu(){
 		out = new PrintWriter(System.out);
 		in = new Scanner(System.in);
 		prompt = "->";
 		cxInput = new CXInput();
+		dscxControl = new DSCXControl();
 	}
 	
 	CXMenu(PrintWriter _out, Scanner _in, 
@@ -59,7 +61,23 @@ public class CXMenu {
 				continue;
 			}
 			
+			if("exit".equalsIgnoreCase(command)) {
+				break;
+			} 
+			
+			if("print".equalsIgnoreCase(command)) {
+				print();
+				continue;
+			}
+			
 		}
+	}
+	
+	
+	void print() {
+		//gử thông điệp
+		// đến hành vi printDSCX
+		dscxControl.printDSCX();
 	}
 	
 	void add() {
